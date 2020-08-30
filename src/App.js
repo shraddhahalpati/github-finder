@@ -6,6 +6,7 @@ import User from './components/users/User';
 import Search from './components/users/Search';
 import Alert from './components/layout/Alert';
 import About from './components/pages/About';
+import Contact from './components/pages/Contact';
 import axios from 'axios';
 import './App.css';
 
@@ -85,6 +86,7 @@ class App extends Component {
                 </Fragment>
               )} />
               <Route exact path='/about' component={About} />
+              <Route exact path='/contact' component={Contact} />
               <Route exact path='/user/:login' render={ props => (
                 <User 
                   { ...props } 
